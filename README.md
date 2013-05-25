@@ -11,4 +11,4 @@ place in scripts directory along with coffee-script.js. make sure coffee-sphere.
 e.g.
 
 	module.exports = ->
-		MapEngine("whatever.rmp", 60)
+		MapEngine "whatever.rmp", 60
