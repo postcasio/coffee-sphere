@@ -112,13 +112,6 @@ var game;
 			exports: {}
 		};
 		
-		function loadCoffee(path) {
-			var file = OpenRawFile(path + '.coffee');
-			var coffee = CreateStringFromByteArray(file.read(file.getSize()));
-		
-			return CoffeeScript.compile(coffee);
-		}
-		
 		var file = OpenRawFile(path + '.coffee');
 		this.source = CreateStringFromByteArray(file.read(file.getSize()));
 		this.javascriptSource = CoffeeScript.compile(this.source);
